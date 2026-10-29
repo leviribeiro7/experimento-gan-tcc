@@ -1,8 +1,8 @@
 # Super-Resolução de Faces com Real-ESRGAN
 
-Este repositório documenta um experimento ponta a ponta de validação do fluxo de treinamento da arquitetura Real-ESRGAN para a restauração de imagens faciais degradadas, etapa inicial para o desenvolvimento do Trabalho de Conclusão de Curso (TCC).
+Este repositório documenta um experimento de validação do fluxo de treinamento da arquitetura Real-ESRGAN para a restauração de imagens faciais degradadas, etapa inicial para o desenvolvimento do Trabalho de Conclusão de Curso (TCC).
 
-O modelo base e os scripts de treinamento foram bifurcados e adaptados do repositório da dissertação de mestrado de Cristiano Lima Oliveira.
+O modelo base e os scripts de treinamento foram bifurcados e adaptados do repositório da dissertação de mestrado de Cristiano Lima Oliveira. [https://github.com/CristianoLimaOliveira/Master-s-degree]
 
 ---
 
@@ -24,7 +24,7 @@ A arquitetura utilizada atua como um *Upscaler de 2x* (elevando as entradas de 6
 Para adequar o modelo à natureza espacial do FFHQ (potências de 2), o arquivo `config.py` foi modificado, sobrescrevendo os parâmetros estruturais:
 * **Resolução Base (HIGH_RES):** Alterada de 160 para 128.
 * **Tamanho do Batch (Batch Size):** 4
-* **Épocas (Epochs):** 10 (Teste piloto rápido para validação de convergência matemática).
+* **Épocas (Epochs):** 10 (Teste rápido para validação de convergência matemática).
 * **Otimizador e Learning Rate:** Adam ($LR = 1 \times 10^{-4}$).
 * **Ambiente de Treinamento:** Google Colab (Aceleração por GPU NVIDIA T4).
 
@@ -38,7 +38,7 @@ O foco deste experimento foi comprovar o fluxo de dados (*DataLoader*), a passag
 * **Tempo Total de Treinamento (10 épocas):** ~8 minutos (utilizando a GPU NVIDIA T4).
 
 ### 📊 Avaliação Quantitativa (Métricas de Reconstrução)
-Após a conclusão das 10 épocas do teste piloto, foram calculadas as métricas de qualidade de imagem sobre o conjunto de teste:
+Após a conclusão das 10 épocas do teste, foram calculadas as métricas de qualidade de imagem sobre o conjunto de teste:
 
 | Métrica | Valor Obtido | Descrição |
 | :--- | :---: | :--- |
