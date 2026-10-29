@@ -1,6 +1,6 @@
 # Super-Resolução de Faces com Real-ESRGAN
 
-Este repositório documenta um experimento de validação do fluxo de treinamento da arquitetura Real-ESRGAN para a restauração de imagens faciais degradadas, etapa inicial para o desenvolvimento do Trabalho de Conclusão de Curso (TCC).
+Este repositório documenta um experimento de validação do treinamento da arquitetura Real-ESRGAN para a restauração de imagens faciais degradadas, etapa inicial para o desenvolvimento do Trabalho de Conclusão de Curso (TCC).
 
 O modelo base e os scripts de treinamento foram bifurcados e adaptados do repositório da dissertação de mestrado de Cristiano Lima Oliveira. [https://github.com/CristianoLimaOliveira/Master-s-degree]
 
